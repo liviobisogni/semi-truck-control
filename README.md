@@ -18,16 +18,13 @@ q_dot = Aq + Bf(q)u
 
 where A and B are the system matrices and f(q) is a nonlinear function. Feedback linearization is then applied to convert the nonlinear system into a linear one, which can be controlled easily.
 
-
-## Simulation
-The Simulink diagram of the system is included in the repository, along with the Sigmoide and circumference functions used in the simulation. The simulation results are also included in the project.
-
-
-## Images
-#### Simulink block diagram
+### Simulink block diagram
 ![](img/simulink_diagram.png)
 
-#### Circular trajectory
+
+## Simulations
+
+### Circular trajectory
 * Trajectory tracking
 ![](img/circle__Trajectory_tracking.pdf)
 * Front axle position
@@ -37,7 +34,7 @@ The Simulink diagram of the system is included in the repository, along with the
 * Control signals and articulated angle
 ![](img/circle__Control_signals_and_articulated_angle.pdf)
 
-#### Sigmoid trajectory
+### Sigmoid trajectory
 * Trajectory tracking
 ![](img/sigmoid__Trajectory_tracking.pdf)
 * Front axle position
