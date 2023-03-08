@@ -27,7 +27,7 @@ The Simulink diagram of the system is included in the repository, along with the
 #### Simulink block diagram
 ![](img/simulink_diagram.png)
 
-#### Circle trajectory
+#### Circular trajectory
 * Trajectory tracking
 ![](img/circle__Trajectory_tracking.pdf)
 * Front axle position
