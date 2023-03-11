@@ -7,16 +7,16 @@ close all
 %
 % It generates and (potentially) saves all the figures in the desired format.
 %
-saving_flag     = 0;                                                    % if '1', images (i.e., plots) are saved (as .png files);
-                                                                        % otherwise, they ain't saved
-title_flag      = 1;                                                    % if '1', titles are added to images;
-                                                                        % otherwise, they ain't added
+saving_flag     = 0;                                                            % if '1', images (i.e., plots) are saved (as .png files);
+                                                                                % otherwise, they ain't saved
+title_flag      = 1;                                                            % if '1', titles are added to images;
+                                                                                % otherwise, they ain't added
 %
-image_extension = 'pdf';                                                % pdf, png, ...
-images_path     = '/Users/v/Documents/MATLAB/Tavole/Tavola_2/images';   % It is the folder where images will be saved.
-                                                                        % *** !!! change this path if needed !!! ***
-main_path       = '/Users/v/Documents/MATLAB/Tavole/Tavola_2';          % It is the folder containing the source code.
-                                                                        % *** !!! change this path if needed !!! ***
+image_extension = 'pdf';                                                        % pdf, png, ...
+images_path     = '/Users/username/Documents/MATLAB/semi-truck-control/img/';   % It is the folder where images will be saved.
+                                                                                % *** !!! change this path if needed !!! ***
+main_path       = '/Users/username/Documents/MATLAB/semi-truck-control/src/';   % It is the folder containing the source code.
+                                                                                % *** !!! change this path if needed !!! ***
 %%_________________________________________________________________________
 
 

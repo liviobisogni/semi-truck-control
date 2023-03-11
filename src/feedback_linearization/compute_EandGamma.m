@@ -1,4 +1,4 @@
-% Carico il modello
+% Load the model
 articulatedVehicle_mdl
 
 q_dot = f + g * u;
@@ -41,7 +41,7 @@ sol.alpha
 sol.beta
 
 
-%% Check correttezza
+%% Verification of correctness
 ni = [h_1_dot_dot;
       h_2_dot_dot];
 
@@ -52,13 +52,14 @@ isThisZero = simplify(ni - (Gamma + E * u_NEW))
 
 
 
-%% nomenclatura: [x_a y_a theta_a gamma]
+
+%% nomenclature: [x_a y_a theta_a gamma]
 % E = [cos(beta + theta_a), -(l2*u1*sin(beta + theta_a)*cos(alpha))/(l2*cos(alpha) + l1*cos(alpha - gamma));
 %      sin(beta + theta_a),  (l2*u1*cos(beta + theta_a)*cos(alpha))/(l2*cos(alpha) + l1*cos(alpha - gamma))];
 % Gamma = [(u1^2*(cos(2*beta - alpha + gamma + theta_a) - cos(alpha - gamma + theta_a)))/(2*l2*cos(alpha) + 2*l1*cos(alpha - gamma));
 %          (u1^2*(sin(2*beta - alpha + gamma + theta_a) - sin(alpha - gamma + theta_a)))/(2*l2*cos(alpha) + 2*l1*cos(alpha - gamma))];
 
-%% nomenclatura: [x1 x2 x3 x4]
+%% nomenclature: [x1 x2 x3 x4]
 % E = [cos(beta + x3), -(l2*u1*sin(beta + x3)*cos(alpha))/(l2*cos(alpha) + l1*cos(alpha - x4));
 %      sin(beta + x3),  (l2*u1*cos(beta + x3)*cos(alpha))/(l2*cos(alpha) + l1*cos(alpha - x4))];
 % Gamma = [(u1^2*(cos(2*beta - alpha + x3 + x4) - cos(alpha + x3 - x4)))/(2*l2*cos(alpha) + 2*l1*cos(alpha - x4));
