@@ -42,13 +42,13 @@ where A and B are the system matrices and f(q) is a nonlinear function. Feedback
 ## <a id="use"></a>How to Use
 
 1. Edit `src/feedback_linearization/main_articulatedVehicle.m`:
-	1. Set the simulation parameter settings, including the trajectory selector
+	1. Set the simulation parameter settings, including the trajectory type (circular or sigmoid)
 2. Edit `src/feedback_linearization/plot_articulatedVehicle.m`:
 	1. Set `saving_flag` to 1 if you want to save plot images
 	2. Set `title_flag` to 1 if you want to add titles to the plots
-	3. Set `image_extension ` to the file format you want to use when saving the plots (if `title_flag` is 1), e.g., 'pdf', 'png', 'jpg'.
-	4. Set `images_path ` to the directory where you want to save the plot images (if `title_flag` is 1), e.g., '/Users/username/Documents/MATLAB/puma560-control/img/'
-	5. Set `main_path ` to the directory where the source code is located (if `title_flag` is 1), e.g., '/Users/username/Documents/MATLAB/puma560-control/src/'
+	3. Set `image_extension` to the file format you want to use when saving the plots (if `title_flag` is 1), e.g., 'pdf', 'png', 'jpg'.
+	4. Set `images_path` to the directory where you want to save the plot images (if `title_flag` is 1), e.g., '/Users/username/Documents/MATLAB/puma560-control/img/'
+	5. Set `main_path` to the directory where the source code is located (if `title_flag` is 1), e.g., '/Users/username/Documents/MATLAB/puma560-control/src/'
 3. Run `src/feedback_linearization/main_articulatedVehicle.m`
 
 
