@@ -2,7 +2,6 @@
 
 The project aims to analyze the structural properties and implement feedback linearization control of an articulated vehicle.
 
-
 <p align="center">
 	<a href="#prerequisite">Prerequisite</a>
 	<span> • </span>
@@ -25,11 +24,12 @@ The repository includes the following:
 
 
 ## Feedback Linearization Control
-Feedback linearization control is implemented to control the articulated vehicle. The state vector q is defined as [x, y, theta, gamma] and the input vector u is defined as [v, gamma_dot]. The system is expressed in the following form:
+Feedback Linearization is a technique used in control theory to convert a nonlinear dynamic system into a linear one. The idea behind feedback linearization is to introduce a change of coordinates that allows us to transform the nonlinear dynamics into a linear one by canceling out nonlinearities through feedback control.
 
-q_dot = Aq + Bf(q)u
+To achieve this, we introduce a dynamic linearization approach by adding an integrator to the system and increasing the state space. We then use the added integrator as a new input to the system. By proceeding with further derivations, we obtain a linear system that we can control with a feedback controller.
 
-where A and B are the system matrices and f(q) is a nonlinear function. Feedback linearization is then applied to convert the nonlinear system into a linear one, which can be controlled easily.
+The input used to linearize the system is called the linearizing input. We obtain the linearizing input by solving for the control input that makes the system linear. Once we have the linearizing input, we can use a feedback controller to control the system.
+
 
 #### Simulink block diagram
 ![](img/simulink_diagram.png)
@@ -60,37 +60,43 @@ where A and B are the system matrices and f(q) is a nonlinear function. Feedback
 
 ## <a id="sample-images"></a>Sample Images
 
-### Circular trajectory
+### Circular Trajectory
 * Trajectory tracking
 <p align="center" width="100%">
     <img width="75%" src="img/circle__Trajectory_tracking.png"> 
 </p>
+
 * Front axle position
 <p align="center" width="100%">
     <img width="75%" src="img/circle__Front_axle_position.png"> 
 </p>
+
 * Trajectory tracking error
 <p align="center" width="100%">
     <img width="75%" src="img/circle__Trajectory_tracking_error.png"> 
 </p>
+
 * Control signals and articulated angle
 <p align="center" width="100%">
     <img width="75%" src="img/circle__Control_signals_and_articulated_angle.png"> 
 </p>
 
-### Sigmoid trajectory
+### Sigmoid Trajectory
 * Trajectory tracking
 <p align="center" width="100%">
     <img width="75%" src="img/sigmoid__Trajectory_tracking.png"> 
 </p>
+
 * Front axle position
 <p align="center" width="100%">
     <img width="75%" src="img/sigmoid__Front_axle_position.png"> 
 </p>
+
 * Trajectory tracking error
 <p align="center" width="100%">
     <img width="75%" src="img/sigmoid__Trajectory_tracking_error.png"> 
 </p>
+
 * Control signals and articulated angle
 <p align="center" width="100%">
     <img width="75%" src="img/sigmoid__Control_signals_and_articulated_angle.png"> 
